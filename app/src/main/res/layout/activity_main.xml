@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Activity Layout -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradient_background"
+    android:paddingBottom="20dp"
+    android:paddingTop="?attr/actionBarSize">
+
+    <!-- Header Section with enhanced styling -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Tasks"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:letterSpacing="0.02"
+        android:shadowColor="#40000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"/>
+
+    <!-- Tasks Container with seamless gradient background -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:clipToPadding="false"
+        android:padding="20dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/taskContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp" />
+    </ScrollView>
+
+    <!-- Enhanced FAB with modern design -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="24dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="#4F46E5"
+        app:tint="@android:color/white"
+        app:elevation="12dp"
+        app:pressedTranslationZ="16dp"
+        app:rippleColor="#80FFFFFF"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        android:contentDescription="Add Task" />
+
+</LinearLayout>

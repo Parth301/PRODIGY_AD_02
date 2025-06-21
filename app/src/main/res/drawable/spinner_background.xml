@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- White background to match input fields -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Rounded corners to match TextInputLayout styling -->
+    <corners android:radius="12dp" />
+
+    <!-- Stroke to match the input field styling -->
+    <stroke
+        android:width="2dp"
+        android:color="#6366F1" />
+
+</shape>
